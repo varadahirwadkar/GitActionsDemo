@@ -24,7 +24,9 @@ jobs:
 
       # Run the script
       - name: Run the version updater
-        run: ./run.sh
+        run: | 
+            chmod +x run.sh
+            ./run.sh
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GH_EMAIL: ${{ secrets.GH_EMAIL }}
