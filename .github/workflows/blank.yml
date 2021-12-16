@@ -4,9 +4,6 @@ name: Zstreams Trigger
 
 # Controls when the workflow will run
 on:
-  push:
-    branches:
-      - main 
   schedule:
     # Runs "every 30 minutes" 
     - cron: '*/30 * * * *'
