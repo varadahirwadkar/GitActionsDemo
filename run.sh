@@ -27,7 +27,7 @@ commit_files() {
 }
 
 upload_files() {
-  git remote add origin-page https://${GH_TOKEN}@github.com/varadahirwadkar/openshift-build-tracker > /dev/null 2>&1
+  git remote add origin-page https://${GH_TOKEN}@github.com/varadahirwadkar/GitActionsDemo > /dev/null 2>&1
   git push --quiet --set-upstream origin-page main
 }
 
